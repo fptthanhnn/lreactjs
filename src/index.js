@@ -3,14 +3,21 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import test from "./html_css";
+
+const element1 = (
+  <div>
+    <p color="yellow">Try to enter new element</p>
+    <a href="html_css.js">Try redirect not sure if it work</a>
+  </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
-  <React.StrictMode>
+  <div>
     <App />
-    <test />
-  </React.StrictMode>
+    {element1}
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
